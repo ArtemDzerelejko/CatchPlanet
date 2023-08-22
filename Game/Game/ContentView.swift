@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SwiftUI
 import SpriteKit
 
 struct ContentView: View {
@@ -26,21 +25,18 @@ struct ContentView: View {
 
 struct GameView: View {
     @State private var isGameStarted = false
-    
     var body: some View {
+        
         VStack {
-       
             Text("Catch the Figures!")
                 .font(.title)
                 .padding()
-            
             if isGameStarted {
                 Spacer()
                 SpriteView(scene: GameScene(size: CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)))
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 100)
                     .ignoresSafeArea()
             }
-            
             Button(action: {
                 isGameStarted.toggle()
             }) {
