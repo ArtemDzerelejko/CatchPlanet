@@ -5,7 +5,7 @@ I am happy to present a mobile game for catching planets!
 Use the [git clone](https://github.com/git-guides/git-clone) command to install CatchPlanet.
 
 ```bash
-git clone https://github.com/ArtemDzerelejko/TestProjectWithNews.git
+git clone https://github.com/ArtemDzerelejko/CatchPlanet.git
 ```
 
 ## Usage
